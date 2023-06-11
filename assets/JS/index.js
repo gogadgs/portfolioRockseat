@@ -39,7 +39,7 @@ const trocarCores = ()=>{
 
 /*  função para que ao clicar no botao de baixar meu curriculo a pessoa consiga efetua-lo  */
 
-let url ='./assets/IMG/curriculo.pdf';
+let url ='assets/IMG/Curriculo.pdf';
 let nomeDoArquivo ='Curriculo';
 
 const baixarCurriculo = (url, nomeDoArquivo)=>{
