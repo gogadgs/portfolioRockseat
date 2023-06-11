@@ -1,0 +1,59 @@
+@keyframes rotação {
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+}
+    50%{
+        transform:rotate(180deg)    ;
+        -webkit-transform:rotate(180deg)    ;
+        -moz-transform:rotate(180deg)    ;
+        -ms-transform:rotate(180deg)    ;
+        -o-transform:rotate(180deg)    ;
+}
+    100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+    
+}
+
+@keyframes velocidadeImagemDireita {
+    from{
+            left:0;
+    }
+
+    to{
+            left:50%;
+
+    }
+    
+}
+@keyframes velocidadeImagemEsquerda {
+    from{
+            left:50%;
+    }
+
+    to{
+            left:0;
+
+    }
+    
+}
+
+@keyframes animacao-bordas {
+    0% {
+      border-image: linear-gradient(45deg, var(--cor-secundária)50%, orange 20%);
+    }
+    50% {
+      border-image: linear-gradient(90deg, orange 40%, yellow 10%);
+    }
+    100% {
+      border-image: linear-gradient(360deg, yellow 50%, green 70%);
+    }
+  }

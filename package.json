@@ -1,0 +1,13 @@
+{
+  "name": "rockseat",
+  "version": "1.0.0",
+  "description": "Template criado no curso da Rockeseat",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "executando" :"node ./assets/js/index.js"
+  },
+  "author": "Dougls Godois dos santos",
+  "license": "ISC"
+}

@@ -1,0 +1,61 @@
+/* seção de estilização dos componentes do navegador e da página padroes  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* seção de variaveis globais da pagina  */
+:root{
+
+--cor-primária:#32C0FD;
+--cor-secundária:#FF00B8;
+--cor-terciária:#121214;
+--fonte-padrao: 'Inter', sans-serif;
+--cor-padrao:#ffffff;
+--imagem-de-fundo:url('../IMG/bg-mobile.jpg');
+--preenchimento-cor:rgba(255,255,255,0.5);
+--cor-de-fundo-botao:rgba(255,255,255,0.1);
+--mouse-botao-acima:rgba(255,255,255,0.05);
+--mouse-botao-acima-redes-sociais:rgba(255,255,255,0.2);
+--botao-troca-cor:#ffffff url('../IMG/moon-stars.svg') no-repeat center center;
+
+}
+
+/* seção de estilo de barra de rolagem  */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #121214;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #FF00B8;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #32C0FD;
+  }
+  
+
+  /* reset estilização icones  */
+
+ ion-icon{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  contain: strict;
+  fill:var(--cor-padrao);
+  box-sizing: content-box !important;
+}
+
+  

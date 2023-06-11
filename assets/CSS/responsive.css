@@ -1,0 +1,11 @@
+@media screen and (min-width:700px){
+    :root{
+        --imagem-de-fundo:url('../IMG/bg-desktop.jpg');
+    }
+    
+:root.telaDeLuz{
+
+        --imagem-de-fundo:url('../IMG/bg-desktop-light.jpg');
+      
+    }
+}

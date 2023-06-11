@@ -1,0 +1,274 @@
+/* importação de reconfiguração do arquivo em CSS */
+
+@import url('./reset.css');
+
+
+/* importação de configuração  da animação em CSS*/
+
+
+@import url('./animation.css');
+
+/* importação de configuração responsiva em CSS */
+@import url('./responsive.css');
+
+/*  seção estilização do corpo do site */
+
+.telaDeLuz{
+    --cor-padrao:#000000;
+    --imagem-de-fundo:url('../IMG/bg-mobile-light.jpg');
+    --preenchimento-cor:rgba(0,0,0,0.5);
+    --cor-de-fundo-botao:rgba(0,0,0,0.05);
+    --mouse-botao-acima:rgba(0,0,0,0.02);
+    --mouse-botao-acima-redes-sociais:rgba(0,0,0,0.1);
+    --botao-troca-cor:#ffffff url('../IMG/sun.svg') no-repeat center center;
+}
+
+body{
+ background:var(--imagem-de-fundo) no-repeat top center / cover;
+/*  background-repeat: no-repeat;
+ background-position: top center;
+ background-size: cover; */
+ font-family:var(--fonte-padrao);
+ color:var(--cor-padrao);
+ height:100vh;
+   
+}
+
+
+/*  seção estilização cabeçalho da página  */
+
+header{
+    display:block;
+    margin:0.3rem 0;
+    
+}
+header ul{
+    display:block;
+    margin:1.2rem auto;
+    text-align: center;
+    padding:1px;
+  
+    
+}
+header ul li{
+    list-style:none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    list-style:none;
+    color:white;
+    display: inline;
+    color:var(--cor-padrao);
+    display: inline;
+    width:100%;
+    position:relative;
+    margin:0 0.3rem;
+    padding:2px 20px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    
+}
+
+header ul li:hover{
+    color:var(--cor-padrao)
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+
+/* seção de estilização do conteudo principal da página  */
+
+
+main .conteudo-principal{
+    width:100%;
+    max-width: 588px;
+    margin:8px auto 0;
+    padding:0 24px;
+    
+}
+
+main figure{
+    text-align:center;
+    padding:24px;
+}
+
+ main figure img{
+    max-width:112px;
+    display:block;
+    margin:0 auto;
+    max-height: 112px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+
+main figure p{
+    font-weight:500;
+    font-size:16px;
+    line-height:24px;
+    margin-top:8px;
+}
+main .botao-troca-cores{
+    position:relative;
+    min-width:64px;
+    max-width:64px;
+    margin: 0 auto;
+   
+}
+
+main .botao-troca-cores button{
+    min-width:32px;
+    max-width:32px;
+    min-height:32px;
+    max-height:32px;
+    background:var(--botao-troca-cor);
+    border:0;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    position:absolute;
+    z-index:1;
+    transform:translateY(-50%);
+    left:0;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -o-transform:translateY(-50%);
+    animation:velocidadeImagemEsquerda 0.4s;
+    -webkit-animation:velocidadeImagemEsquerda 0.4s;
+}
+
+main .botao-troca-cores button:hover{
+    outline:8px solid var(--preenchimento-cor);
+}
+main .botao-troca-cores  span{
+    display:block;
+    min-width:64px;
+    max-width:64px;
+    min-height:24px;
+    max-height:24px;
+    background:var(--cor-de-fundo-botao);
+    border:1px solid var(--preenchimento-cor);
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(4px);
+    border-radius:9999px;
+    -webkit-border-radius:9999px;
+    -moz-border-radius:9999px;
+    -ms-border-radius:9999px;
+    -o-border-radius:9999px;
+}
+
+.telaDeLuz .botao-troca-cores button{
+   animation:velocidadeImagemDireita 0.4s forwards;
+   -webkit-animation:velocidadeImagemDireita 0.4s forwards;
+}
+
+
+
+main ol{
+    display:flex;
+    flex-direction:column;
+    text-decoration:none;
+    list-style: none;
+    gap:16px;
+    padding:24px 0;
+}
+
+
+
+main ol li  a{
+    cursor:pointer;
+    color:var(--cor-padrao);
+    text-decoration:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:16px 24px;
+    background:var(--cor-de-fundo-botao);
+    border: 1px solid var(--preenchimento-cor);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+    font-weight:500;
+    transition:background 0.2s;
+    -webkit-transition:background 0.2s;
+    -moz-transition:background 0.2s;
+    -ms-transition:background 0.2s;
+    -o-transition:background 0.2s;
+}
+main ol li:hover a{
+    background:var(--mouse-botao-acima);
+    border: 1.5px solid var(--cor-padrao);
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+
+
+ main .conteudo-principal .social-medias{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:8px 0;
+    font-size:24px;
+}
+main .conteudo-principal .social-medias a{
+    text-decoration: none;
+    list-style:none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:16px;
+    transition:background 0.2s;
+    -webkit-transition:background 0.2s;
+    -moz-transition:background 0.2s;
+    -ms-transition:background 0.2s;
+    -o-transition:background 0.2s;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -o-border-radius:50%;
+    -webkit-border-radius:50%;
+    -ms-border-radius:50%;
+}
+main .conteudo-principal .social-medias a:hover{
+background:var(--mouse-botao-acima-redes-sociais);
+}
+
+
+/*  seção de estilização rodapé da página */
+
+footer{
+    padding:4px 0;
+    margin-bottom:-2rem;
+}
+
+footer span{
+    display: block;
+    margin:0 auto;
+    text-align:center;
+    font-size:0.65rem;
+    font-weight: 500;
+}
+
+footer span a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:var(--cor-secundária);
+}
