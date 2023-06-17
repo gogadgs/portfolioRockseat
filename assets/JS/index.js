@@ -21,7 +21,7 @@ const trocarCores = ()=>{
 
 
     raiz.classList.contains('telaDeLuz')?
-    imagem.setAttribute('src','./assets/IMG/linkedin Douglas Godois dos Santos.pdf'):
+    imagem.setAttribute('src','./assets/IMG/curriculo foto.jpg'):
     
     imagem.setAttribute('src','./assets/IMG/arte douglas.jpg');
 
