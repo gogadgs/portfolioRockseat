@@ -57,3 +57,20 @@
       border-image: linear-gradient(360deg, yellow 50%, green 70%);
     }
   }
+
+  @keyframes progressoEmVolta {
+      0% {
+        border-color: linear-gradient(45deg,var(--cor-primária) 0%,var(--cor-secundária) 30%,var(--cor-terciária) 80%);
+        transform:border-color 1s infinite linear;
+        -webkit-transform:border-color 1s infinite linear;
+        -moz-transform:border-color 1s infinite linear;
+        -ms-transform:border-color 1s infinite linear;
+        -o-transform:border-color 1s infinite linear;
+}
+
+
+
+}
+  
+  
+  
