@@ -85,11 +85,37 @@ header ul li:hover{
 /* seção de estilização do conteudo principal da página  */
 
 
+.progresso{
+    border:1px solid white;
+    width:90%;
+    height:100%;
+    
+}
+
+.progresso.dentro{
+    border: 1px solid rgb(255,51,153);
+    height:40.6rem;
+    transform-origin:left;
+    animation:progressoEmVolta 1a infinite;
+    -webkit-animation:progressoEmVolta 1s infinite;
+    
+}
+main{
+    width:100%;
+    max-width: 588px;
+    margin:8px auto 0;
+    padding:0 24px;
+    
+
+}
+
+
 main .conteudo-principal{
     width:100%;
     max-width: 588px;
     margin:8px auto 0;
     padding:0 24px;
+   
     
 }
 
@@ -253,6 +279,12 @@ background:var(--mouse-botao-acima-redes-sociais);
 
 
 /*  seção de estilização rodapé da página */
+footer{
+    width:100%;
+    max-width: 588px;
+    margin:8px auto 0;
+    padding:0 24px;
+}
 
 footer{
     padding:4px 0;
